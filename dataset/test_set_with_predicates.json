@@ -1,0 +1,1404 @@
+{
+    "data_dict": [
+        {
+            "ID": "EVAL_00001",
+            "ASP": "adjacent_to(2,X) :- node(2), node(X), X = 3.adjacent_to(2,X) :- node(2), node(X), X = 5.",
+            "NL_V2": " A node is identified by a id. \nAn edge is identified by a node, by a node.Node 2 is adjacent to nodes 3 and 5.",
+            "CNL_V2": "A node is identified by a id.\nAn edge is identified by a node, by a node.\nNode 2 is adjacent to node X, where X is one of 3, 5.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00002",
+            "ASP": "adjacent_to(4,5) :- node(4), node(5).",
+            "NL_V2": " A node is identified by a id.Node 4 is adjacent to node 5.",
+            "CNL_V2": "A node is identified by a id.\nNode 4 is adjacent to Node 5.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00003",
+            "ASP": "bound(4).",
+            "NL_V2": "There is a bound with the number 4.",
+            "CNL_V2": "4 is bound.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00004",
+            "ASP": "color(\"red\").color(\"green\").color(\"blue\").",
+            "NL_V2": "We have red, green, and blue as the color choices.",
+            "CNL_V2": "A color is one of red, green, blue.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00005",
+            "ASP": "edge(\"a\",\"b\").",
+            "NL_V2": " An edge is identified by a vtx1, by an vtx2.Vertices a and b are connected by an edge.",
+            "CNL_V2": "An edge is identified by a vtx1, by an vtx2.\nThere is a edge with vtx1 equal to a, with vtx2 equal to b.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00007",
+            "ASP": "edge(\"b\",\"c\").",
+            "NL_V2": " A edge is identified by a value, by a value.The vertex b has an edge towards vertex c.",
+            "CNL_V2": "A edge is identified by a value, by a value. There is a edge with value equal to b, with value equal to c.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00008",
+            "ASP": "edge(\"d\",\"a\").",
+            "NL_V2": " A edge is identified by a vertex, by an vertex.There is a fact establishing an edge from vertex d to vertex a.",
+            "CNL_V2": "A edge is identified by a vertex, by an vertex.\nThere is a edge with vertex equal to d, with vertex equal to a.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00009",
+            "ASP": "edge(\"d\",\"e\").",
+            "NL_V2": " An edge is identified by a value, by a value.Connect vertex d to vertex e with an edge.",
+            "CNL_V2": "An edge is identified by a value, by a value. There is a edge with value equal to d, with value equal to e.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00010",
+            "ASP": "edge(1,2).edge(1,4).",
+            "NL_V2": " An edge is identified by a vertex, by a vertex.The vertex 1 has outgoing edges to vertices 2 and 4.",
+            "CNL_V2": "An edge is identified by a vertex, by a vertex. There is an edge with vertex 1, with vertex 2. There is an edge with vertex 1, with vertex 4.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00011",
+            "ASP": "edge(1,2,2).",
+            "NL_V2": " An edge is identified by a vertex, by a vertex, and by a weight.There is an edge with weight 2 among nodes 1 and 2.",
+            "CNL_V2": "An edge is identified by a vertex, by a vertex, and by a weight. There is a edge with vertex equal to 1, with vertex equal to 2, with weight equal to 2.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00012",
+            "ASP": "edge(1,X) :- vtx(1), vtx(X), X = 2.edge(1,X) :- vtx(1), vtx(X), X = 4.",
+            "NL_V2": " A vtx is identified by a id.  A edge is identified by a vtx, by an vtx.There are edges pointing from vertex 1 to vertices 2 and 4.",
+            "CNL_V2": "A vtx is identified by a id. A edge is identified by a vtx, by an vtx. Vtx 1 have an edge to Vtx X, where X is one of 2, 4.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00013",
+            "ASP": "edge(1,X) :- vtx(1), vtx(X), X = 2.edge(1,X) :- vtx(1), vtx(X), X = 4.edge(1,X) :- vtx(1), vtx(X), X = 5.",
+            "NL_V2": " A vtx is identified by a id.In addition to the edge between vertex 1 and vertex 2, the vertex 1 has an edges to vertex 4 and vertex 5.",
+            "CNL_V2": "A vtx is identified by a id.\nVtx 1 have an edge to Vtx X, where X is one of 2, 4, 5.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00014",
+            "ASP": "edge(2,3).",
+            "NL_V2": " An edge is identified by a node, by a node.Vertex 2 has an edge pointing to vertex 3.",
+            "CNL_V2": "An edge is identified by a node, by a node. There is a edge with node 2, with node 3.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00015",
+            "ASP": "edge(2,3,3).",
+            "NL_V2": " An edge is identified by a vertex, by a vertex, by a weight.Define an edge among node 2 and 3 with weight 3.",
+            "CNL_V2": "An edge is identified by a vertex, by a vertex, by a weight. There is a edge with vertex equal to 2, with vertex equal to 3, with weight equal to 3.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00016",
+            "ASP": "edge(3,1) :- vtx(3), vtx(1).",
+            "NL_V2": " A vtx is identified by a id.Model an edge between vertices 3 and 1.",
+            "CNL_V2": "A vtx is identified by a id.\nVtx 3 have an edge to Vtx 1.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00018",
+            "ASP": "edge(3,2) :- vtx(3), vtx(2).",
+            "NL_V2": " A vtx is identified by a id.There is an edge between vertex 3 and vertex 2.",
+            "CNL_V2": "A vtx is identified by a id.Vtx 3 have an edge to Vtx 2.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00017",
+            "ASP": "edge(3,2) :- vtx(3), vtx(2).",
+            "NL_V2": " A vtx is identified by a id.Vertex 3 has an edge toward vertex 2.",
+            "CNL_V2": "A vtx is identified by a id.\n Vtx 3 have an edge to Vtx 2.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00019",
+            "ASP": "edge(3,4,1).",
+            "NL_V2": " An edge is identified by a vertex, by a vertex, by a weight.Nodes 3 and 4 have an edge with weight 1.",
+            "CNL_V2": "An edge is identified by a vertex, by a vertex, by a weight. There is a edge with vertex equal to 3, with vertex equal to 4, with weight equal to 1.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00020",
+            "ASP": "edge(3,X) :- vertex(3), vertex(X), X = 1.edge(3,X) :- vertex(3), vertex(X), X = 4.edge(3,X) :- vertex(3), vertex(X), X = 5.edge(3,X) :- vertex(3), vertex(X), X = 7.",
+            "NL_V2": " A Vertex is identified by an id.Vertex 3 is connected to vertices 1, 4, 5 and 7 by an edge.",
+            "CNL_V2": "A Vertex is identified by an id. Vertex 3 have an edge to Vertex X, where X is one of 1, 4, 5, 7.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00021",
+            "ASP": "edge(3,X) :- vtx(3), vtx(X), X = 5.edge(3,X) :- vtx(3), vtx(X), X = 1.",
+            "NL_V2": " A vtx is identified by a id.Create an edge connecting vertex 3 to vertices 5 and 1.",
+            "CNL_V2": "A vtx is identified by a id. \n Vtx 3 have an edge to Vtx X, where X is one of 5, 1.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00022",
+            "ASP": "edge(4,1,3).",
+            "NL_V2": " A edge is identified by a vertex, by a vertex, by a weight.The edge between node 4 and node 1 has weight of 3.",
+            "CNL_V2": "A edge is identified by a vertex, by a vertex, by a weight. There is a edge with vertex equal to 4, with vertex equal to 1, with weight equal to 3.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00023",
+            "ASP": "edge(4,2) :- vtx(4), vtx(2).",
+            "NL_V2": " A vtx is identified by a id.There is an edge between vertices 4 and 2.",
+            "CNL_V2": "A vtx is identified by a id.\nVtx 4 have an edge to Vtx 2.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00025",
+            "ASP": "edge(4,3).",
+            "NL_V2": " An edge is identified by a vertex, by a vertex.Create an edge among vertices 4 and 3.",
+            "CNL_V2": "An edge is identified by a vertex, by a vertex. There is an edge with vertex 4, with vertex 3. ",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00026",
+            "ASP": "edge(4,3).edge(4,2).edge(4,5).",
+            "NL_V2": " An edge is identified by a node, by a node.Vertex 4 has outgoing edges to vertices 3, 2 and 5.",
+            "CNL_V2": "An edge is identified by a node, by a node. There is a edge with node 4, with node 3. There is an edge with node 4, with node 2. There is an edge with node 4, with node 5.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00028",
+            "ASP": "edge(5,3) :- vtx(5), vtx(3).",
+            "NL_V2": " A vtx is identified by a id.An edge connects vertices 5 and 3.",
+            "CNL_V2": "A vtx is identified by a id.\nVtx 5 have an edge to Vtx 3.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00029",
+            "ASP": "edge(5,X) :- vtx(5), vtx(X), X = 2.edge(5,X) :- vtx(5), vtx(X), X = 1.",
+            "NL_V2": " A vtx is identified by a value.Use edges to connect vertex 5 to vertices 2 and 1.",
+            "CNL_V2": "A vtx is identified by a value. Vtx 5 have an edge to Vtx X, where X is one of 2, 1.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00030",
+            "ASP": "edge(6,X) :- vtx(6), vtx(X), X = 1.edge(6,X) :- vtx(6), vtx(X), X = 2.edge(6,X) :- vtx(6), vtx(X), X = 4.edge(6,X) :- vtx(6), vtx(X), X = 7.",
+            "NL_V2": " A vtx is identified by a number.Vertices identified with number 1, 2, 4 and 7 have incoming edges from vertex 6.",
+            "CNL_V2": "A vtx is identified by a number.\nVtx 6 have an edge to Vtx X, where X is one of 1, 2, 4, 7.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00031",
+            "ASP": "edge(6,X) :- vtx(6), vtx(X), X = 5.edge(6,X) :- vtx(6), vtx(X), X = 1.",
+            "NL_V2": " A vtx is identified by a value.Connect vertex 6 to vertex 5 and vertex 1 with an edge.",
+            "CNL_V2": "A vtx is identified by a value. Vtx 6 have an edge to Vtx X, where X is one of 5, 1.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00032",
+            "ASP": "edge(7,X) :- vtx(7), vtx(X), X = 6.edge(7,X) :- vtx(7), vtx(X), X = 5.edge(7,X) :- vtx(7), vtx(X), X = 4.",
+            "NL_V2": " A vtx is identified by a id.The vertex 7 has an edge over the vertex X, where X is either 6, 5, or 4.",
+            "CNL_V2": "A vtx is identified by a id.\nVtx 7 have an edge to Vtx X, where X is one of 6, 5, 4.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00033",
+            "ASP": "edge(8,X) :- vtx(8), vtx(X), X = 1.edge(8,X) :- vtx(8), vtx(X), X = 3.edge(8,X) :- vtx(8), vtx(X), X = 4.edge(8,X) :- vtx(8), vtx(X), X = 5.edge(8,X) :- vtx(8), vtx(X), X = 6.edge(8,X) :- vtx(8), vtx(X), X = 7.edge(8,X) :- vtx(8), vtx(X), X = 19.",
+            "NL_V2": " A vtx is identified by a id.Vertex 8 has edges to vertices 1, 4, 6, 3, 19, 5 and 7.",
+            "CNL_V2": "A vtx is identified by a id.\nVtx 8 have an edge to Vtx X, where X is one of 1, 3, 4, 5, 6, 7, 19.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00034",
+            "ASP": "edge(8,X) :- vtx(8), vtx(X), X = 3.edge(8,X) :- vtx(8), vtx(X), X = 6.edge(8,X) :- vtx(8), vtx(X), X = 5.edge(8,X) :- vtx(8), vtx(X), X = 1.",
+            "NL_V2": " A vtx is identified by a value.Vertex 8 has outgoing edges to vertices 3, 6, 5, and 1.",
+            "CNL_V2": "A vtx is identified by a value. Vtx 8 have an edge to Vtx X, where X is one of 3, 6, 5, 1.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00035",
+            "ASP": "edge_to(2,X) :- node(2), node(X), X = 3.edge_to(2,X) :- node(2), node(X), X = 5.",
+            "NL_V2": " A node is identified by a id. \nAn edge is identified by a node, by a node.There are edges among node 2 and nodes 3 and 5.",
+            "CNL_V2": "A node is identified by a id.\nAn edge is identified by a node, by a node.\nNode 2 is edge to node X, where X is one of 3, 5.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00036",
+            "ASP": "edgebound(4).",
+            "NL_V2": "The provided edgebound is 4.",
+            "CNL_V2": "4 is edgebound.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00037",
+            "ASP": "edgewt(1,4,3).",
+            "NL_V2": " An edgewt is identified by a vtx, by a vtx, by a weight.The edgewt between vertex 1 and vertex 4 has a weight of 3.",
+            "CNL_V2": "An edgewt is identified by a vtx, by a vtx, by a weight. There is a edgewt with vtx equal to 1, with vtx equal to 4, with weight equal to 3.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00039",
+            "ASP": "edgewt(3,2,3).",
+            "NL_V2": " A edgewt is identified by a vtx, by a vtx,by a weight.There is an edgewt between vertex 3 and vertex 2 having a weight of 3.",
+            "CNL_V2": "A edgewt is identified by a vtx, by a vtx,by a weight. There is an edgewt with vtx 3, with vtx 2, with weight 3.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00040",
+            "ASP": "edgewt(3,4,1).",
+            "NL_V2": " An edgewt is identified by a vtx, by a vtx, by a weight.Create an edgewt between vertex 3 and vertex 4 with weight of 1.",
+            "CNL_V2": "An edgewt is identified by a vtx, by a vtx, by a weight. There is a edgewt with vtx equal to 3, with vtx equal to 4, with weight equal to 1.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00042",
+            "ASP": "init(\"a\").",
+            "NL_V2": " A init is identified by an id.The init node is a.",
+            "CNL_V2": "A init is identified by an id. There is a init with id equal to a.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00043",
+            "ASP": "levels(1..3).",
+            "NL_V2": "There are three levels.",
+            "CNL_V2": "A levels goes from 1 to 3.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00044",
+            "ASP": "link(1,X) :- node(1), node(X), X = 2.link(1,X) :- node(1), node(X), X = 3.",
+            "NL_V2": " A node is identified by an id.Node 1 is connected to nodes 2 and 3 through a link.",
+            "CNL_V2": "A node is identified by an id. Node 1 have a link to Node X, where X is one of 2,3.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00045",
+            "ASP": "link(3,X) :- node(3), node(X), X = 2.link(3,X) :- node(3), node(X), X = 1.",
+            "NL_V2": " A node is identified by an id.Node 3 has outgoing links to nodes 2 and 1.",
+            "CNL_V2": "A node is identified by an id. Node 3 have a link to Node X, where X is one of 2,1.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00046",
+            "ASP": "maxweight(10).",
+            "NL_V2": "There is a maxweight with the number 10.",
+            "CNL_V2": "10 is maxweight.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00047",
+            "ASP": "node(1..4).",
+            "NL_V2": "Create the facts for 4 nodes.",
+            "CNL_V2": "A node goes from 1 to 4.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00048",
+            "ASP": "parts(1..3).",
+            "NL_V2": "Model three parts.",
+            "CNL_V2": "A parts goes from 1 to 3.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00049",
+            "ASP": "start(1).",
+            "NL_V2": "The start node is 1.",
+            "CNL_V2": "1 is start.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00051",
+            "ASP": "vertex(\"b\").",
+            "NL_V2": " A vertex is identified by an id.There exists a vertex labeled with the letter 'b'.",
+            "CNL_V2": "A vertex is identified by an id. There is a vertex with id equal to b.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00052",
+            "ASP": "vertex(\"c\").",
+            "NL_V2": " A vertex is identified by an id.Model a vertex with id equal to c.",
+            "CNL_V2": "A vertex is identified by an id. There is a vertex with id equal to c.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00053",
+            "ASP": "vtx(1..4).",
+            "NL_V2": "Vertices ranges from 1 to 4.",
+            "CNL_V2": "A Vtx goes from 1 to 4.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00055",
+            "ASP": "vtx(1..8).",
+            "NL_V2": "Consider a graph with eight vertices.",
+            "CNL_V2": "A Vtx goes from 1 to 8.",
+            "Category": "Definition Const/Compound"
+        },
+        {
+            "ID": "EVAL_00058",
+            "ASP": "arc(X,Y) :- vtx(X), edge(X,Y), vtx(Y).",
+            "NL_V2": " A vtx is identified by a id.The edge present between two nodes are modelled as arcs.",
+            "CNL_V2": "A vtx is identified by a id.\n Vtx X have an arc to vtx Y when vtx X have an edge to vtx Y.",
+            "Category": "Definition When"
+        },
+        {
+            "ID": "EVAL_00057",
+            "ASP": "arc(X,Y) :- vtx(X), edge(X,Y), vtx(Y).",
+            "NL_V2": " A vtx is identified by a id.An edge between two vertices results in an arc among them.",
+            "CNL_V2": "A vtx is identified by a id.\n Vtx X have an arc to vtx Y when vtx X have an edge to vtx Y.",
+            "Category": "Definition When"
+        },
+        {
+            "ID": "EVAL_00059",
+            "ASP": "arc(Y,X) :- vtx(X), edge(X,Y), vtx(Y).",
+            "NL_V2": " A vtx is identified by a id.Model an arc between two vertices when there is an edge from the second vertex to the first.",
+            "CNL_V2": "A vtx is identified by a id.\n Vtx Y have an arc to Vtx X when Vtx X have an edge to vtx Y.",
+            "Category": "Definition When"
+        },
+        {
+            "ID": "EVAL_00060",
+            "ASP": "considered(V) :- uedge(U,V), vtx(V), vtx(U), dom(U).",
+            "NL_V2": " A vtx is identified by a id.When there is an uedge relation between two vertices and the first one is dom, then we can model the second vertex as considered.",
+            "CNL_V2": "A vtx is identified by a id.\n Vtx V is considered when Vtx U have an uedge to Vtx V and also Vtx U is dom.",
+            "Category": "Definition When"
+        },
+        {
+            "ID": "EVAL_00061",
+            "ASP": "considered(V) :- vtx(V), dom(V).",
+            "NL_V2": " A vtx is identified by a id.The vertices that are dom are also considered.",
+            "CNL_V2": "A vtx is identified by a id.\nVtx V is considered when Vtx V is dom.",
+            "Category": "Definition When"
+        },
+        {
+            "ID": "EVAL_00062",
+            "ASP": "considered(V) :- vtx(V), uedge(V,U), vtx(U), dom(U).",
+            "NL_V2": " A vtx is identified by an id.Model a vertex as considered when there is an uedge relation between it and a second vertex that is also dom.",
+            "CNL_V2": "A vtx is identified by an id. Vtx V is considered when Vtx V have an uedge to Vtx U and also Vtx U is dom.",
+            "Category": "Definition When"
+        },
+        {
+            "ID": "EVAL_00063",
+            "ASP": "reach(U,V) :- vtx(U), used_edge(U,V), vtx(V).",
+            "NL_V2": " A vtx is identified by an id.  A used_edge is identified by a vtx, by a vtx.  A reach is identified by a vtx, by a vtx.A vertex reach another one if there is an used edge between them.",
+            "CNL_V2": "A vtx is identified by an id. A used_edge is identified by a vtx, by a vtx. A reach is identified by a vtx, by a vtx. Vtx U reach Vtx V when Vtx U have an used_edge to V.",
+            "Category": "Definition When"
+        },
+        {
+            "ID": "EVAL_00064",
+            "ASP": "reach(U,V) :- vtx(U), used_edge(U,Z), vtx(Z), reach(Z,V), vtx(V), U != V.",
+            "NL_V2": " A vtx is identified by a id. \nA reach is identified by a vtx, by a vtx.A first vertex can reach a second one if it has a used edge to a third vertex that reach the second vertex, provided the first and second vertices are different.",
+            "CNL_V2": "A vtx is identified by a id.\nA reach is identified by a vtx, by a vtx.\n Vtx U reach Vtx V when Vtx U have an used_edge to Vtx Z and also Vtx Z reach Vtx V, where U is different from V.",
+            "Category": "Definition When"
+        },
+        {
+            "ID": "EVAL_00065",
+            "ASP": "reached(U) :- vtx(V), reach(V,U), vtx(U).",
+            "NL_V2": " A vtx is identified by an id.A vertex is modeled as reached when there is another vertex that reaches it.",
+            "CNL_V2": "A vtx is identified by an id. Vtx U is reached when Vtx V reach Vtx U.",
+            "Category": "Definition When"
+        },
+        {
+            "ID": "EVAL_00067",
+            "ASP": "uedge(U,V) :- vtx(U), edge(U,V), vtx(V), U < V.",
+            "NL_V2": " A vtx is identified by a id.An undirected edge exists when an edge goes from a smaller vertex to a larger one.",
+            "CNL_V2": "A vtx is identified by a id.\n Vtx U have an uedge to Vtx V when Vtx U have an edge to V, where U is less than V. ",
+            "Category": "Definition When"
+        },
+        {
+            "ID": "EVAL_00068",
+            "ASP": "uedge(U,V) :- vtx(U), edge(U,V), vtx(V), U < V.",
+            "NL_V2": " A vtx is identified by a id.If there is an edge connecting two vertices, and the first vertex is smaller that the second, then we can create a uedge relation between them.",
+            "CNL_V2": "A vtx is identified by a id.\n Vtx U have an uedge to Vtx V when Vtx U have an edge to V, where U is less than V.",
+            "Category": "Definition When"
+        },
+        {
+            "ID": "EVAL_00066",
+            "ASP": "uedge(U,V) :- vtx(U), edge(U,V), vtx(V), U < V.",
+            "NL_V2": " A vtx is identified by a id.Model an undirected edge for every edge where the first vertex is smaller than the second.",
+            "CNL_V2": "A vtx is identified by a id.\nVtx U have an uedge to Vtx V when Vtx U have an edge to V, where U is less than V. ",
+            "Category": "Definition When"
+        },
+        {
+            "ID": "EVAL_00136",
+            "ASP": "uedge(U,V) :- vtx(U), edge(U,V), vtx(V), U < V.",
+            "NL_V2": " A vtx is identified by a id.There is an undirected edge whenever there is an edge between two vertices where the first is smaller than the second.",
+            "CNL_V2": "A vtx is identified by a id. Vtx U have an uedge to Vtx V when Vtx U have an edge to V, where U is less than V.",
+            "Category": "Definition When"
+        },
+        {
+            "ID": "EVAL_00069",
+            "ASP": "uedge(U,V) :- vtx(V), edge(V,U), vtx(U), U < V.",
+            "NL_V2": " An vtx is identified by a value.An undirected edge is created for every edge where the second vertex is smaller than the first.",
+            "CNL_V2": "An vtx is identified by a value. Vtx U have an uedge to Vtx V when Vtx V have an edge to U, where U is less than V.",
+            "Category": "Definition When"
+        },
+        {
+            "ID": "EVAL_00138",
+            "ASP": "uedge(U,V) :- vtx(V), edge(V,U), vtx(U), U < V.",
+            "NL_V2": " A vtx is identified by an id.Define an undirected edge in the oposite direction of each edge where the target node is smaller that the source one.",
+            "CNL_V2": "A vtx is identified by an id. Vtx U have an uedge to vtx V when vtx V have an edge to U, where U is less than V.",
+            "Category": "Definition When"
+        },
+        {
+            "ID": "EVAL_00137",
+            "ASP": "uedge(U,V) :- vtx(V), edge(V,U), vtx(U), U < V.",
+            "NL_V2": " A vtx is identified by a id.Whenever there is an edge between two vertices where the first vertex is bigger than the second one, create an undirected edge from the second to the first.",
+            "CNL_V2": "A vtx is identified by a id. Vtx U have an uedge to Vtx V when Vtx V have an edge to U, where U is less than V.",
+            "Category": "Definition When"
+        },
+        {
+            "ID": "EVAL_00070",
+            "ASP": "uedge(Y,X) :- node(X), edge(X,Y), node(Y), Y < X.",
+            "NL_V2": " A node is identified by an id.Whenever there is an edge where the second node is smaller than the first node, then there is an uedge relation from the second to the first node.",
+            "CNL_V2": "A node is identified by an id.\nNode Y is uedge node X when node X have an edge node Y, where Y is less than X.",
+            "Category": "Definition When"
+        },
+        {
+            "ID": "EVAL_00071",
+            "ASP": "uedge_to(X,Y) :- node(X), edge_to(X,Y), node(Y), X < Y.",
+            "NL_V2": " A node is identified by a id.There is a uedge relation between two nodes whenever there is and edge among them and the first node is smaller than the second.",
+            "CNL_V2": "A node is identified by a id.\nNode X is uedge to Node Y when node X is edge to node Y, where X is less than Y.",
+            "Category": "Definition When"
+        },
+        {
+            "ID": "EVAL_00072",
+            "ASP": "used_edge(U,V) :- dom(U), dom(V), vtx(U), uedge(U,V), vtx(V).",
+            "NL_V2": " A vtx is identified by an id.  A dom is identified by a vtx.When there is a undirected edge among two dom vertices, then we have a used edge.",
+            "CNL_V2": "A vtx is identified by an id. A dom is identified by a vtx. Vtx U have an used_edge to Vtx V when Vtx U is dom and also Vtx V is dom and also Vtx U have an uedge to V.",
+            "Category": "Definition When"
+        },
+        {
+            "ID": "EVAL_00073",
+            "ASP": "used_edge(U,V) :- dom(U), dom(V), vtx(V), uedge(V,U), vtx(U).",
+            "NL_V2": " A vtx is identified by a id. \nA dom is identified by a vtx.There is an used edge between two dom vertices when we have and undirected edge from the second vertex to the first.",
+            "CNL_V2": "A vtx is identified by a id.\nA dom is identified by a vtx.\n Vtx U have an used_edge to Vtx V when Vtx U is dom and also Vtx V is dom and also Vtx V have an uedge to U.",
+            "Category": "Definition When"
+        },
+        {
+            "ID": "EVAL_00076",
+            "ASP": "adjacent(U,V,X,Y) :- uedge(U,V), partition(U,X), partition(V,Y), Y > X.",
+            "NL_V2": " A vtx is identified by a id. \nA partition  is identified by a vtx, by a part. \nA vtxbound is identified by a value. \nA uedge is identified by a vtx1, by a vtx2. \nA adjacent is identified by a vtx1, by a vtx2, by a part1, by a part2.Two existing partitions that relates a vertex with a part are adjacent if there is an edge connecting a vertex in one partition to a vertex in the another, and the part of the first partition in smaller than the second.",
+            "CNL_V2": "A vtx is identified by a id.\nA partition  is identified by a vtx, by a part.\nA vtxbound is identified by a value.\nA uedge is identified by a vtx1, by a vtx2.\nA adjacent is identified by a vtx1, by a vtx2, by a part1, by a part2.\nWhenever there is a uedge with vtx1 U, with vtx2 V, whenever there is an partition with vtx U, with part X,  whenever there is an partition with vtx V, with part Y, and with part Y greater than X, then we must have a adjacent with vtx1 U, with vtx2 V, with part1 X, with part2 Y.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00077",
+            "ASP": "arc(X,Y) :- edge(X,Y).",
+            "NL_V2": " A vtx is identified by an id.  An edge is identified by a vtx, by a vtx.  An arc is identified by a vtx, by a vtx.An arc exists between two vertices if there is an edge connecting them.",
+            "CNL_V2": "A vtx is identified by an id. An edge is identified by a vtx, by a vtx. An arc is identified by a vtx, by a vtx. Whenever there is a edge with vtx id X, with vtx id Y then we must have a arc with vtx id X, with vtx id Y.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00078",
+            "ASP": "arc(X,Y) :- edge(Y,X).",
+            "NL_V2": " A edge is identified by a vtx, by a vtx.  An arc is identified by a vtx, by a vtx.An arc exists in the opposite direction of every edge.",
+            "CNL_V2": "A edge is identified by a vtx, by a vtx. An arc is identified by a vtx, by a vtx. Whenever there is an edge with vtx Y,with vtx X, then we must have an arc with vtx X, with vtx Y.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00079",
+            "ASP": "cardinality_d(KD) :- #count{VTX: inside(VTX)} = KD.",
+            "NL_V2": " An inside is identified by a vtx.  A cardinality_d is identified by a value.The cardinality is true when the number of instances for which inside holds is equal to a value that satisfies the vertex.",
+            "CNL_V2": "An inside is identified by a vtx. A cardinality_d is identified by a value. Whenever we have that the number of vtx that are inside  is equal to KD then we must have a cardinality_d with value KD.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00080",
+            "ASP": "cond(V) :- inside(V).",
+            "NL_V2": " An inside is identified by a vertex.  A cond is identified by a vertex.Every vertex that is inside also satisfies the condition.",
+            "CNL_V2": "An inside is identified by a vertex. A cond is identified by a vertex. Whenever there is a inside with vertex V then we must have a cond with vertex V.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00081",
+            "ASP": "cond(V) :- vtx(V), #sum{WGHT,V1: edgewt(V,V1,WGHT), inside(V1)} >= MW, minweight(MW).",
+            "NL_V2": " A vtx is identified by a value.  An inside is identified by a vtx.  A cond is identified by a vtx.  An edgewt is identified by a vtx, by a vtx, by a weight.  A minweight is identified by a value.A vertex satisfies the condition if the sum of the weight of the edges leaving it is at least a given min weight.",
+            "CNL_V2": "A vtx is identified by a value. An inside is identified by a vtx. A cond is identified by a vtx. An edgewt is identified by a vtx, by a vtx, by a weight. A minweight is identified by a value. Whenever there is a vtx with value V, whenever we have that the total weight, for each vtx value V1, that have a edgewt with vtx value V, with vtx value V1 inside V1 with vtx value V1 is greater than or equal to MW, whenever there is a minweight with value MW then we must have a cond with vtx value V.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00082",
+            "ASP": "cond(V) :- vtx(V), #sum{WGHT,V1: edgewt(V1,V,WGHT), inside(V1)} >= MW, minweight(MW).",
+            "NL_V2": " A vtx is identified by a value.  An inside is identified by a vtx.  A cond is identified by a vtx.  An edgewt is identified by a vtx, by a vtx, by a weight.  A minweight is identified by a value.A vertex satisfies the condition if the sum of the weight of its incoming edges is at least a given min weight.",
+            "CNL_V2": "A vtx is identified by a value. An inside is identified by a vtx. A cond is identified by a vtx. An edgewt is identified by a vtx, by a vtx, by a weight. A minweight is identified by a value. Whenever there is a vtx with value V, whenever we have that the total weight, for each vtx value V1, that have a edgewt with vtx value V1, with vtx value V inside V1 with vtx value V1 is greater than or equal to MW, whenever there is a minweight with value MW then we must have a cond with vtx value V.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00083",
+            "ASP": "considered(V1,V2) | not_considered(V1,V2) :- edge(V1,V2).",
+            "NL_V2": " A edge is identified by a vtx1, by a vtx2. \nA considered is identified by an vtx1, by a vtx2. \nA not_considered is identified by an vtx1, by a vtx2.An existing edge between vertices can be either considered or not considered.",
+            "CNL_V2": "A edge is identified by a vtx1, by a vtx2.\nA considered is identified by an vtx1, by a vtx2.\nA not_considered is identified by an vtx1, by a vtx2.\nWhenever there is a edge with vtx1 V1, with vtx2 V2 then we must have a considered with vtx1 V1, with vtx2 V2 or a not_considered with vtx1 V1, with vtx2 V2.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00084",
+            "ASP": "controlled(Y) :- controls(_,Y).",
+            "NL_V2": " A controlled is identified by a value.  A controls is identified by a company, by a value.An element is controlled if another elements controls it.",
+            "CNL_V2": "A controlled is identified by a value. A controls is identified by a company, by a value. Whenever there is a controls with value Y then we must have a controlled with value Y.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00085",
+            "ASP": "distance(X,L,Y) :- restaurant(_,X), restaurant(_,L), Y = L-X, X <= L.",
+            "NL_V2": " A restaurant is identified by a name, by a km.  A distance is identified by a km, by a km, by a diff.Whenever there are two different restaurants with name and kilometers, then we can create a distance containing the two kilometers and their difference, having that the first kilometer is smaller or equal to the second.",
+            "CNL_V2": "A restaurant is identified by a name, by a km. A distance is identified by a km, by a km, by a diff. Whenever there is a restaurant with km X less than or equal to L, whenever there is a restaurant with km L then we must have a distance with km X, with km L, with diff Y, where Y is equal to L-X.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00086",
+            "ASP": "distance(X,L,Y) :- restaurant(_,X), restaurant(_,L), Y = X-L, X > L.",
+            "NL_V2": " A restaurant is identified by a name, by a km.  A distance is identified by a km, by a km, by a diff.Whenever there are two different restaurants with name and kilometers, then we can create a distance containing the two kilometers and their difference, having that the first kilometer is bigger than the second.",
+            "CNL_V2": "A restaurant is identified by a name, by a km. A distance is identified by a km, by a km, by a diff. Whenever there is a restaurant with km X greater than L, whenever there is a restaurant with km L then we must have a distance with km X, with km L, with diff Y, where Y is equal to X-L.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00087",
+            "ASP": "existsless(U,K) :- partition(U,K), partition(V,K), vtx(V), V < U.",
+            "NL_V2": " A vtx is identified by a id. \nA partition  is identified by a vtx, by a part. \nA existsless is identified by a vtx, by a part.A vertex in a partition is said to have a smaller vertex in the same partition whenever there exists another vertex in the partition with a smaller identifier.",
+            "CNL_V2": "A vtx is identified by a id.\nA partition  is identified by a vtx, by a part.\nA existsless is identified by a vtx, by a part.\nWhenever there is an partition with vtx U, with part K, whenever there is an partition with vtx V, with part K, whenever there is an vtx with id V, and with id V less than U, then we must have a existsless with vtx U, with part K.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00091",
+            "ASP": "hc(X,Y) :- in_hm(X,Y), edge(X,Y).",
+            "NL_V2": " A in_hm is identified by a id1, by a id2.  \nAn edge is identified by a first vtx, by a second vtx.  \nA hc is identified by a first vtx, by a second vtx.All edges that are also modeled as a in_hm relation should be considered a hc.",
+            "CNL_V2": "A in_hm is identified by a id1, by a id2. \nAn edge is identified by a first vtx, by a second vtx. \nA hc is identified by a first vtx, by a second vtx. Whenever there is a in_hm with id1 X, with id2 Y, whenever there is an edge with first vtx X, with second vtx Y, then we must have a hc with first vtx X, with second vtx Y.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00088",
+            "ASP": "hc(X,Y) :- in_hm(X,Y), edge(X,Y).",
+            "NL_V2": " A in_hm is identified by a id1, by a id2.  \nAn edge is identified by a first vtx, by a second vtx.  \nA hc is identified by a first vtx, by a second vtx.An edge is part of the hamiltonian cycle whenever it is defined and is also a in_hm.",
+            "CNL_V2": "A in_hm is identified by a id1, by a id2. \nAn edge is identified by a first vtx, by a second vtx. \nA hc is identified by a first vtx, by a second vtx. Whenever there is a in_hm with id1 X, with id2 Y, whenever there is an edge with first vtx X, with second vtx Y, then we must have a hc with first vtx X, with second vtx Y.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00093",
+            "ASP": "hc(X,Y) :- in_hm(Y,X), edge(X,Y).",
+            "NL_V2": " A in_hm is identified by a vertex, by a vertex. \nAn edge is identified by a vertex, by a vertex.  \nA hc is identified by a vertex , by a vertex .All existing edges in the graph belong to the hc if their reverse edge is modeled as in_hm.",
+            "CNL_V2": "A in_hm is identified by a vertex, by a vertex.\nAn edge is identified by a vertex, by a vertex. \nA hc is identified by a vertex , by a vertex .\nWhenever there is a in_hm with vertex Y, with vertex X, whenever there is an edge with vertex X, with vertex Y, then we must have a hc with vertex X, with vertex Y.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00097",
+            "ASP": "hc(X,Y) :- in_hm(Y,X), edge(X,Y).",
+            "NL_V2": " A in_hm is identified by a vtx, by a vtx.  An edge is identified by a vtx, by a vtx.  A hc is identified by a vtx , by a vtx .All existing edges in the graph whose reverse is an in_hm, belong to the hc.",
+            "CNL_V2": "A in_hm is identified by a vtx, by a vtx. An edge is identified by a vtx, by a vtx. A hc is identified by a vtx , by a vtx .Whenever there is a in_hm with vtx Y, with vtx X, whenever there is an edge with vtx X, with vtx Y, then we must have a hc with vtx X, with vtx Y.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00099",
+            "ASP": "arc(X,Y) :- edge(X,Y),not edge (Y,X), X < Y.",
+            "NL_V2": " An arc is identified by a vtx, by a vtx.  An edge is identified by a vtx, by a vtx.There is an arc between two vertices if there is an edge between them, there isn't an edge in the opposite direction and the first vertex is smaller than the second.",
+            "CNL_V2": "An arc is identified by a vtx, by a vtx. An edge is identified by a vtx, by a vtx. Whenever there is a edge with vtx X less than Y, with vtx Y, whenever there is not a edge with vtx Y, with vtx X then we must have a arc with vtx X, with vtx Y.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00095",
+            "ASP": "hc(X,Y) :- in_hm(Y,X), edge(X,Y).",
+            "NL_V2": " A in_hm is identified by a vtx, by a vtx. \nA hc is identified by a vtx, by a vtx. \nAn edge is identified by a vtx, by a vtx. \nA hc is identified by a vertex , by a vertex.An edge between two vertices is considered HC whenever it is defined and its reverse is also a in_hm",
+            "CNL_V2": "A in_hm is identified by a vtx, by a vtx.\nA hc is identified by a vtx, by a vtx.\nAn edge is identified by a vtx, by a vtx.\nA hc is identified by a vertex , by a vertex.\nWhenever there is a in_hm with vtx Y, with vtx X, whenever there is an edge with vtx X, with vtx Y, then we must have a hc with vtx X, with vtx Y.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00101",
+            "ASP": "in_hm(X,Y) | out_hm(X,Y) :- arc(X,Y), bound(X).",
+            "NL_V2": " A arc is identified by a first vtx, by a second vtx.  \nA bound is identified by a first vtx.  \nA in_hm is identified by an id1, by an id2.  \nA out_hm is identified by a first vtx, by a second vtx.For each bound vertex that has an outgoing arc, we can model the arc as an in_hm or as an out_hm.",
+            "CNL_V2": "A arc is identified by a first vtx, by a second vtx. \nA bound is identified by a first vtx. \nA in_hm is identified by an id1, by an id2. \nA out_hm is identified by a first vtx, by a second vtx. Whenever there is a arc with first vtx X, with second vtx Y, whenever there is a bound with first vtx X, then we must have a in_hm with id1 X, with id2 Y or out_hm with first vtx X, with second vtx Y.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00100",
+            "ASP": "in_hm(X,Y) | out_hm(X,Y) :- arc(X,Y), bound(X).",
+            "NL_V2": " A bound is identified by a vtx.  An arc is identified by a vtx, by a vtx.   An in_hm is identified by a vtx, by a vtx.  An out_hm is identified by a vtx, by a vtx.Whenever a vertex is bound and has an arc to another vertex, we can model the arc as either in_hm or out_hm.",
+            "CNL_V2": "A bound is identified by a vtx. An arc is identified by a vtx, by a vtx.  An in_hm is identified by a vtx, by a vtx. An out_hm is identified by a vtx, by a vtx. Whenever there is a arc with vtx X, with vtx Y, whenever there is a bound with vtx X, then we must have a in_hm with vtx X, with vtx Y or out_hm with vtx X, with vtx Y.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00102",
+            "ASP": "in_hm(X,Y) | out_hm(X,Y) :- arc(X,Y), reached(X).",
+            "NL_V2": " An arc is identified by a first vtx, by a second vtx.  \nA reached is identified by a first vtx.  \nAn in_hm is identified by an id1, by an id2.  \nAn out_hm is identified by a first vtx, by a second vtx.An arc is considered either in_hm or out_hm whenever it exists and its first vertex is reached.",
+            "CNL_V2": "An arc is identified by a first vtx, by a second vtx. \nA reached is identified by a first vtx. \nAn in_hm is identified by an id1, by an id2. \nAn out_hm is identified by a first vtx, by a second vtx. Whenever there is a arc with first vtx X, with second vtx Y, whenever there is a reached with first vtx X, then we must have a in_hm with id1 X, with id2 Y or out_hm with first vtx X, with second vtx Y.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00103",
+            "ASP": "in_hm(X,Y) | out_hm(X,Y) :- arc(X,Y), reached(X).",
+            "NL_V2": " A vtx is identified by a id. \nA arc is identified by a first vtx, by a second vtx. \nA reached is identified by a vtx. \nA in_hm is identified by a first vtx, by a second vtx. \nA out_hm is identified by a first vtx, by a second vtx.Model an arc as either in_hm or out_hm whenever it exist and the first vertex is reached.",
+            "CNL_V2": "A vtx is identified by a id.\nA arc is identified by a first vtx, by a second vtx.\nA reached is identified by a vtx.\nA in_hm is identified by a first vtx, by a second vtx.\nA out_hm is identified by a first vtx, by a second vtx.\nWhenever there is a arc with first vtx X, with second vtx Y, whenever there is a reached with vtx X, then we must have a in_hm with first vtx X, with second vtx Y or out_hm with first vtx X, with second vtx Y.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00104",
+            "ASP": "included(X) :- not in_exclusive(X), node(X).",
+            "NL_V2": " A node is identified by a value.  An included is identified by a node.  An in_exclusive is identified by a node.When a node is not marked as in_exclusive, then it is included.",
+            "CNL_V2": "A node is identified by a value. An included is identified by a node. An in_exclusive is identified by a node. Whenever there is not a in_exclusive with node X, whenever there is a node with value X then we must have a included with node X.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00105",
+            "ASP": "inpath(X,Y) :- reached(X), edge(X,Y), not outpath(X,Y).",
+            "NL_V2": " A start is identified by a node. \nA edge is identified by a first node, by a second node. \nA outpath is identified by a first node, by a second node. \nA inpath is identified by a first node, by a second node. \nA reached is identified by a node.Edges that start at a reached vertex and are not marked as out of the path can be considered in the path.",
+            "CNL_V2": "A start is identified by a node.\nA edge is identified by a first node, by a second node.\nA outpath is identified by a first node, by a second node.\nA inpath is identified by a first node, by a second node.\nA reached is identified by a node.\nWhenever there is a reached with node X, whenever there is an edge with first node X, and with second node Y, whenever there is not an outpath with first node X, and with second node Y, then we must have an inpath with first node X, and with second node Y.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00106",
+            "ASP": "inpath(X,Y) :- start(X), edge(X,Y), not outpath(X,Y).",
+            "NL_V2": " A start is identified by a node. \nA edge is identified by a first node, by a second node. \nA outpath is identified by a first node, by a second node. \nA inpath is identified by a first node, by a second node.We can consider an edge in the path whenever it exist, its first vertex is the start and it is not marked as out of the path.",
+            "CNL_V2": "A start is identified by a node.\nA edge is identified by a first node, by a second node.\nA outpath is identified by a first node, by a second node.\nA inpath is identified by a first node, by a second node.\nWhenever there is a start with node X, whenever there is an edge with first node X, and with second node Y, whenever there is not an outpath with first node X, and with second node Y, then we must have an inpath with first node X, and with second node Y.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00107",
+            "ASP": "min_degree(D) :- #min{VL: out_degree(_,VL)} = D.",
+            "NL_V2": " An min_degree is identified by a node.  A out_degree is identified by a node, by a value.Minimum degree is the minimum value among all out-degrees.",
+            "CNL_V2": "An min_degree is identified by a node. A out_degree is identified by a node, by a value. Whenever we have that the lowest value of a out_degree  is equal to D then we must have a min_degree with node D.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00108",
+            "ASP": "max_out(E) :- #max{C : out_degree(_, C)} = E.",
+            "NL_V2": " An max_out is identified by a node.  A out_degree is identified by a node, by a value.The max out is the maximum value among all the out degrees.",
+            "CNL_V2": "An max_out is identified by a node. A out_degree is identified by a node, by a value. Whenever we have that the highest value of a out_degree  is equal to E then we must have a max_out with node E.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00109",
+            "ASP": "no_considered(V,V2) :- considered(V,V1), edge(V,V2), V1 != V2.",
+            "NL_V2": " A considered is identified by an vtx1, by a vtx2.  A no_considered is identified by an vtx1, by a vtx2.  A edge is identified by a vtx, by a vtx.The edge among two node is defined as no_considered when there is a considered edge among the first node and a node different from the first.",
+            "CNL_V2": "A considered is identified by an vtx1, by a vtx2. A no_considered is identified by an vtx1, by a vtx2. A edge is identified by a vtx, by a vtx. Whenever there is a considered with vtx1 V, with vtx2 V1 different from V2, whenever there is a edge with vtx V, with vtx V2 then we must have a no_considered with vtx1 V, with vtx2 V2.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00110",
+            "ASP": "no_considered(V,V2) :- considered(V,V1), edge(V,V2), V1 != V2.",
+            "NL_V2": " A considered is identified by an vtx1, by a vtx2.  A no_considered is identified by an vtx1, by a vtx2.  A edge is identified by a vtx, by a vtx.Any edge from a vertex to a different vertex is marked as not considered if another edge from the same source vertex is already considered.",
+            "CNL_V2": "A considered is identified by an vtx1, by a vtx2. A no_considered is identified by an vtx1, by a vtx2. A edge is identified by a vtx, by a vtx. Whenever there is a considered with vtx1 V, with vtx2 V1 different from V2, whenever there is a edge with vtx V, with vtx V2 then we must have a no_considered with vtx1 V, with vtx2 V2.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00111",
+            "ASP": "no_considered(V2,V) :- considered(V1,V), vertex(V2), V1 != V2.",
+            "NL_V2": " A considered is identified by a value, by a value.  A vertex is identified by a value.  A no_considered is identified by a value, by a value.When an edge is defined as considered, then the other edges that have the the same destination vertex are defined as no_considered.",
+            "CNL_V2": "A considered is identified by a value, by a value. A vertex is identified by a value. A no_considered is identified by a value, by a value.  Whenever there is a considered with value V1 different from V2, with value V, whenever there is a vertex with value V2 then we must have a no_considered with value V2, with value V.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00112",
+            "ASP": "no_reached(V) :- vertex(V), not reached(V).",
+            "NL_V2": " A vertex is identified by an id.  \nA reached is identified by an id.  \nA no_reached is identified by an id.A vertex is flagged as non reached whenever it is not reached.",
+            "CNL_V2": "A vertex is identified by an id. \nA reached is identified by an id. \nA no_reached is identified by an id. Whenever there is a vertex with id V, whenever there is not a reached with id V then we must have a no_reached with id V.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00113",
+            "ASP": "out_degree(N,V) :- #count{N: connection(N,_)} = V.",
+            "NL_V2": " An connection is identified by a node, by a node.  An out_degree is identified by a node, by a value.The out-degree of a node is the count of connections originating from it.",
+            "CNL_V2": "An connection is identified by a node, by a node. An out_degree is identified by a node, by a value. Whenever we have that the number of node that have a connection with node N is equal to V then we must have a out_degree with node N, with value V.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00114",
+            "ASP": "outpath(X,Y) :- reached(X), edge(X,Y), not inpath(X,Y).",
+            "NL_V2": " An edge is identified by a node, by a node.  A reached is identified by a node.  An inpath is identified by a node, by a node.  An outpath is identified by a node, by a node.Any edge that is not included in the path and starts from a reached vertex should be marked as out of the path.",
+            "CNL_V2": "An edge is identified by a node, by a node. A reached is identified by a node. An inpath is identified by a node, by a node. An outpath is identified by a node, by a node. Whenever there is a reached with node X, whenever there is an edge with node X, and with node Y, whenever there is not an inpath with node X, and with node Y, then we must have an outpath with node X, and with node Y.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00115",
+            "ASP": "outpath(X,Y) :- start(X), edge(X,Y), not inpath(X,Y).",
+            "NL_V2": " An edge is identified by a node, by a node.  A start is identified by a node.  An inpath is identified by a node, by a node.  An outpath is identified by a node, by a node.We can consider an edge out the path whenever it exist, its first vertex is the start and it is not marked as in the path.",
+            "CNL_V2": "An edge is identified by a node, by a node. A start is identified by a node. An inpath is identified by a node, by a node. An outpath is identified by a node, by a node. Whenever there is a start with node X, whenever there is an edge with node X, and with node Y, whenever there is not an inpath with node X, and with node Y, then we must have  an outpath with node X, and with node Y.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00116",
+            "ASP": "reach(K,U) :- partition(U,K), not existsless(U,K).",
+            "NL_V2": " A partition is identified by a node, by a node.  A reach is identified by a node, by a node.  A existsless is identified by a node, by a node.A vertex is reachable in a partition if it belongs to the partition and no smaller vertex exists in the same partition.",
+            "CNL_V2": "A partition is identified by a node, by a node. A reach is identified by a node, by a node. A existsless is identified by a node, by a node. whenever there is an partition with node U, with node K, whenever there is not an existsless with node U, with node K, then we must have a reach with node K, and with node U.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00117",
+            "ASP": "reach(K,V) :- uedge(U,V), reach(K,U), partition(V,K).",
+            "NL_V2": " A uedge is identified by an id1, by an id2.  \nA reach is identified by an id1, by an id2.  \nA partition is identified by a value, by an id.A vertex is considered reachable in a partition whenever it is in the partition and there exists an undirected edge to it from another vertex that is already reachable in the same partition.",
+            "CNL_V2": "A uedge is identified by an id1, by an id2. \nA reach is identified by an id1, by an id2. \nA partition is identified by a value, by an id. Whenever there is a uedge with id1 U, with id2 V, whenever there is a reach with id1 K, with id2 U, whenever there is a partition with value V, with id K then we must have a reach with id1 K, with id2 V.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00119",
+            "ASP": "reach(K,V) :- uedge(V,U), reach(K,U), partition(V,K).",
+            "NL_V2": " A uedge is identified by an id1, by an id2.  \nA reach is identified by an id1, by an id2.  \nA partition is identified by a value, by an id.A vertex is considered reachable in a partition whenever it is in the partition and there exists an undirected edge to another vertex that is already reachable in the same partition.",
+            "CNL_V2": "A uedge is identified by an id1, by an id2. \nA reach is identified by an id1, by an id2. \nA partition is identified by a value, by an id. Whenever there is a uedge with id1 V, with id2 U, whenever there is a reach with id1 K, with id2 U, whenever there is a partition with value V, with id K then we must have a reach with id1 K, with id2 V.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00121",
+            "ASP": "reached(V2) :- init(V1), considered(V1,V2).",
+            "NL_V2": " A considered is identified by a value, by a value.  A init is identified by a value.  A reached is identified by a value.A vertex is reached if it has a considered edge coming from an initial vertex.",
+            "CNL_V2": "A considered is identified by a value, by a value. A init is identified by a value. A reached is identified by a value. Whenever there is a init with value V1, whenever there is a considered with value V1, with value V2 then we must have a reached with value V2.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00122",
+            "ASP": "reached(V2) :- reached(V1), considered(V1,V2).",
+            "NL_V2": " A considered is identified by a value, by a value. \nA reached is identified by a value.A vertex is reached whenever it has an edge, modeled as considered, originating from a vertex that is already reached.",
+            "CNL_V2": "A considered is identified by a value, by a value.\nA reached is identified by a value.\nWhenever there is a reached with value V1, whenever there is a considered with value V1, with value V2 then we must have a reached with value V2.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00124",
+            "ASP": "reached(X) :- inpath(_,X).",
+            "NL_V2": " A reached is identified by a id. \nA inPath is identified by a start vertex, by a target vertex.A vertex is considered reached if there is an edge towards it that is in the path.",
+            "CNL_V2": "A reached is identified by a id.\nA inPath is identified by a start vertex, by a target vertex.\nWhenever there is a inPath with target vertex X then we must have a reached with id X.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00125",
+            "ASP": "reached(X) :- inpath(_,X).",
+            "NL_V2": " A reached is identified by a id. \nA inPath is identified by a start vertex, by a target vertex.Whenever there is an edge that is in the path, the target vertex is considered reached.",
+            "CNL_V2": "A reached is identified by a id.\nA inPath is identified by a start vertex, by a target vertex.\nWhenever there is a inPath with target vertex X then we must have a reached with id X.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00127",
+            "ASP": "reached(X) :- reached(Y), inpath(Y,X).",
+            "NL_V2": " A inpath is identified by a vertex, by a vertex.  A reached is identified by a vertex.A node that has an edge in the path from a reached node is also considered reached.",
+            "CNL_V2": "A inpath is identified by a vertex, by a vertex. A reached is identified by a vertex. Whenever there is a reached with vertex Y, whenever there is a inPath with vertex Y, with vertex X then we must have a reached with vertex X.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00126",
+            "ASP": "reached(X) :- reached(Y), inpath(Y,X).",
+            "NL_V2": " A inpath is identified by a vertex, by a vertex.  A reached is identified by a vertex.Whenever there is an inpath edge from a reached node to a another node, that node is also reached.",
+            "CNL_V2": "A inpath is identified by a vertex, by a vertex. A reached is identified by a vertex. Whenever there is a reached with vertex Y, whenever there is a inPath with vertex Y, with vertex X then we must have a reached with vertex X.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00130",
+            "ASP": "reached(X) :- start(X).",
+            "NL_V2": " A start is identified by a vertex.  \nA reached is identified by a vertex.The node defined as start is reached.",
+            "CNL_V2": "A start is identified by a vertex. \nA reached is identified by a vertex. Whenever there is a start with vertex X then we must have a reached with vertex X.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00129",
+            "ASP": "reached(X) :- start(X).",
+            "NL_V2": " A reached is identified by a vertex.  A start is identified by a vertex.The start node is reached.",
+            "CNL_V2": "A reached is identified by a vertex. A start is identified by a vertex. Whenever there is a start with vertex X then we must have a reached with vertex X.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00133",
+            "ASP": "reached(Y) :- in_hm(_,Y).",
+            "NL_V2": " A in_hm is identified by an id1, by an id2.  \nA reached is identified by a first vtx.A vertex is reached whenever it is the second variable in a in_hm relation.",
+            "CNL_V2": "A in_hm is identified by an id1, by an id2. \nA reached is identified by a first vtx. Whenever there is an in_hm with id2 Y then we must have a reached with first vtx Y.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00132",
+            "ASP": "reached(Y) :- in_hm(_,Y).",
+            "NL_V2": " A in_hm is identified by an id1, by an id2.  \nA reached is identified by a first vtx.The second vertex of a in_hm relation is reached.",
+            "CNL_V2": "A in_hm is identified by an id1, by an id2. \nA reached is identified by a first vtx. Whenever there is an in_hm with id2 Y then we must have a reached with first vtx Y.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00134",
+            "ASP": "serves(R,DIST) :- restaurant(R,RK), depot(D,DK), distance(RK,DK,DIST), #min{Y: distance(DK1,RK,Y), depot(D1,DK1)} = DIST.",
+            "NL_V2": " A distance is identified by a km, by a km, by a diff.  A serves is identified by a name, by a dist.  A depot is identified by a name, by a km.  A restaurant is identified by a name, by a km.A restaurant is served at a distance if that distance is the minimum distance between the restaurant and any depot.",
+            "CNL_V2": "A distance is identified by a km, by a km, by a diff. A serves is identified by a name, by a dist. A depot is identified by a name, by a km. A restaurant is identified by a name, by a km. Whenever there is a restaurant with name R, with km RK, whenever there is a depot with name D, with km DK, whenever there is a distance with km RK, with km DK, with diff DIST whenever we have that the lowest of diff Y that have a distance with km DK1, with km RK depot with name D1, with km DK1 is equal to DIST, then we must have a serves with name R, with dist DIST.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00135",
+            "ASP": "u_edge(U,V,W) :- uedge(U,V), weight_edgewt(U,V,W).",
+            "NL_V2": " A vtx is identified by a id.  A uedge is identified by a vtx, by a vtx.  A weight_edgewt is identified by a vtx, by a vtx, by a weight.  A u_edge is identified by a vtx, by a vtx, by a weight.An weighted edge is created for every undirected edge that has an associated weight indicated by weight_edgewt.",
+            "CNL_V2": "A vtx is identified by a id. A uedge is identified by a vtx, by a vtx. A weight_edgewt is identified by a vtx, by a vtx, by a weight. A u_edge is identified by a vtx, by a vtx, by a weight. Whenever there is a uedge with vtx U, with vtx V, whenever there is an weight_edgewt with vtx U, with vtx V, with weight W, then we must have a u_edge with vtx U, with vtx V, with weight W.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00139",
+            "ASP": "w_uedge(U,V,W) :- uedge(U,V), weight_edgewt(V,U,W).",
+            "NL_V2": " An uedge is identified by a node, by a node.  An weight_edgewt is identified by a node, by a node, by a weight.  An w_uedge is identified by a node, by a node, by a weight.A weighted undirected edge is defined whenever there is an undirected edge and a matching weighted edge going the other way.",
+            "CNL_V2": "An uedge is identified by a node, by a node. An weight_edgewt is identified by a node, by a node, by a weight. An w_uedge is identified by a node, by a node, by a weight. Whenever there is a uedge with node U, with node V, whenever there is an weight_edgewt with node V, with node U, with weight W, then we must have a w_uedge with node U, with node V, with weight W.",
+            "Category": "Definition Whenever"
+        },
+        {
+            "ID": "EVAL_00141",
+            "ASP": ":- #count{VTX: levelvtx(1,VTX)} > B, bound(B).",
+            "NL_V2": " A levelvtx is identified by a level, by a vtx.  A bound is identified by a value.The count of entries in levelvtx assigned to level one must not exceed the bound.",
+            "CNL_V2": "A levelvtx is identified by a level, by a vtx. A bound is identified by a value. It is prohibited that the number of vtx that have a levelvtx with level equal to 1  is greater than B whenever  there is a bound with value B.",
+            "Category": "Negative Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00142",
+            "ASP": ":- #count{VRTX: inside(VRTX)} = KD, bound(K), KD > K.",
+            "NL_V2": " An inside is identified by a vertex.  A bound is identified by a value.The total number of vertices in the set must not exceed the specified bound.",
+            "CNL_V2": "An inside is identified by a vertex. A bound is identified by a value. It is prohibited that the number of vertex that have a inside  is equal to KD whenever there is a bound with value K, where KD is greater than K.",
+            "Category": "Negative Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00144",
+            "ASP": ":- #count{X: in_hm(X,Y)} != 1, vtx(Y).",
+            "NL_V2": " A vtx is identified by a id. \nA in_hm is identified by a vtx1, by a vtx2.The number of arcs in the hamiltonian path leading to a given vertex cannot be different from 1.",
+            "CNL_V2": "A vtx is identified by a id.\nA in_hm is identified by a vtx1, by a vtx2.\nIt is prohibited that the number of vtx1 X that have a in_hm with vtx2 Y is different from 1 whenever  there is a vtx with id Y.",
+            "Category": "Negative Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00149",
+            "ASP": ":- #count{X: in_hm(X,Y)} != 1, vtx(Y).",
+            "NL_V2": " A vtx is identified by a id. \nA in_hm is identified by a first vtx, by a second vtx.It is forbidden for any vertex to have zero or more than one incoming arc in the Hamiltonian path.",
+            "CNL_V2": "A vtx is identified by a id.\nA in_hm is identified by a first vtx, by a second vtx.\nIt is prohibited that the number of first vtx X that have a in_hm with second vtx Y is different from 1 whenever  there is a vtx with id Y.",
+            "Category": "Negative Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00143",
+            "ASP": ":- #count{X: in_hm(X,Y)} != 1, vtx(Y).",
+            "NL_V2": " A vtx is identified by an id.  An in_hm is identified by a vtx, by a second_vtx.Vertices are not allowed to have more or fewer than one incoming arcs that are in the Hamiltonian path.",
+            "CNL_V2": "A vtx is identified by an id. An in_hm is identified by a vtx, by a second_vtx. It is prohibited that the number of vtx X that have a in_hm with second_vtx Y, with vtx X is different from 1 whenever  there is a vtx with vtx Y.",
+            "Category": "Negative Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00145",
+            "ASP": ":- #count{X: in_hm(X,Y)} != 1, vtx(Y).",
+            "NL_V2": " A vtx is identified by a id. \nA in_hm is identified by a first vtx, by a second vtx.The number of starting vertices in the in_hm relations for any destination vertex cannot be different from one.",
+            "CNL_V2": "A vtx is identified by a id.\nA in_hm is identified by a first vtx, by a second vtx.\nIt is prohibited that the number of first vtx X that have a in_hm with second vtx Y is different from 1 whenever  there is a vtx with id Y.",
+            "Category": "Negative Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00147",
+            "ASP": ":- #count{Y: in_hm(X,Y)} != 1, vtx(X).",
+            "NL_V2": " A vtx is identified by a id. \nA in_hm is identified by a vtx1, by a vtx2.It is forbidden for any vertex that is the starting vertex in an in_hm relation not to have exactly one destination vertex.",
+            "CNL_V2": "A vtx is identified by a id.\nA in_hm is identified by a vtx1, by a vtx2.\nIt is prohibited that the number of vtx2 Y that have a in_hm with vtx1 X is different from 1 whenever  there is a vtx with id X.",
+            "Category": "Negative Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00148",
+            "ASP": ":- #count{Y: in_hm(X,Y)} != 1, vtx(X).",
+            "NL_V2": " A vtx is identified by an id.  An in_hm is identified by a vtx, by a second_vtx.It is not allowed that a vertex has a number of outgoing arcs in the hamiltonian path different than one.",
+            "CNL_V2": "A vtx is identified by an id. An in_hm is identified by a vtx, by a second_vtx. It is prohibited that the number of second_vtx Y that have a in_hm with vtx X, with second_vtx Y is different from 1 whenever there is a vtx with vtx X.",
+            "Category": "Negative Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00146",
+            "ASP": ":- #count{Y: in_hm(X,Y)} != 1, vtx(X).",
+            "NL_V2": " A in_hm is identified by an id1, by an id2. \nA vtx is identified by an id.It is not allowed that the number of destination vertices in a in_hm edge is different than one, for any originating vertex.",
+            "CNL_V2": "A in_hm is identified by an id1, by an id2.\nA vtx is identified by an id.\nIt is prohibited that the number of id2 Y that have a in_hm with id1 X is different from 1 whenever  there is a vtx with id X.",
+            "Category": "Negative Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00150",
+            "ASP": ":- cardinality_d(KD), KD > K, bound(K).",
+            "NL_V2": " A cardinality_d is identified by a value.  A bound is identified by a value.The cardinality of the set cannot be greater than the bound.",
+            "CNL_V2": "A cardinality_d is identified by a value. A bound is identified by a value. It is prohibited that there is a cardinality_d with value KD greater than K, whenever there is a bound with value K.",
+            "Category": "Negative Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00151",
+            "ASP": ":- dom(U), not reached(U).",
+            "NL_V2": " A vtx is identified by a id. \nA dom is identified by a id. \nA reached is identified by a id.A vertex cannot be dom if it is not reached.",
+            "CNL_V2": "A vtx is identified by a id.\nA dom is identified by a id.\nA reached is identified by a id.\nIt is prohibited that there is a dom with id U, whenever there is not a reached with id U.",
+            "Category": "Negative Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00152",
+            "ASP": ":- dom(U), not reached(U).",
+            "NL_V2": " A vtx is identified by a id. \nA dom is identified by a id. \nA reached is identified by a id.We cannot have dom vertices that are not reached.",
+            "CNL_V2": "A vtx is identified by a id.\nA dom is identified by a id.\nA reached is identified by a id.\nIt is prohibited that there is a dom with id U, whenever there is not a reached with id U.",
+            "Category": "Negative Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00153",
+            "ASP": ":- edge(X,Y), partition(K1,X), partition(K2,Y), K1 != K2.",
+            "NL_V2": " A partition is identified by a id, by a node.  An edge is identified by a node, by a node.Two nodes cannot be in different partitions if there is an edge between them.",
+            "CNL_V2": "A partition is identified by a id, by a node. An edge is identified by a node, by a node. It is prohibited that there is a edge with node X, with node Y, whenever there is a partition with id K1 different from K2, with node X, whenever there is a partition with id K2, with node Y.",
+            "Category": "Negative Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00155",
+            "ASP": ":- inpath(X,Y), inpath(X,Y1), Y != Y1.",
+            "NL_V2": " A vtx is identified by a id. \nA considered is identified by a vtx. \nA inpath is identified by a first node, by a second node.A node cannot have two outgoing edges if they are both in the path.",
+            "CNL_V2": "A vtx is identified by a id.\nA considered is identified by a vtx.\nA inpath is identified by a first node, by a second node.\nIt is prohibited that there is a inPath with first_node X, with second_node Y different from Y1, whenever there is a inPath with first_node X, with second_node Y1.",
+            "Category": "Negative Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00154",
+            "ASP": ":- inpath(X,Y), inpath(X,Y1), Y != Y1.",
+            "NL_V2": " A vtx is identified by a id. \nA considered is identified by a vtx. \nA inpath is identified by a first node, by a second node.A node cannot have two outgoing inpath edges to different nodes.",
+            "CNL_V2": "A vtx is identified by a id.\nA considered is identified by a vtx.\nA inpath is identified by a first node, by a second node.\nIt is prohibited that there is a inPath with first_node X, with second_node Y different from Y1, whenever there is a inPath with first_node X, with second_node Y1.",
+            "Category": "Negative Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00156",
+            "ASP": ":- inpath(X,Y), inpath(X,Y1), Y != Y1.",
+            "NL_V2": " A vtx is identified by a id. \nA considered is identified by a vtx. \nA inpath is identified by a first node, by a second node.No vertex may have two edges leaving it in the path.",
+            "CNL_V2": "A vtx is identified by a id.\nA considered is identified by a vtx.\nA inpath is identified by a first node, by a second node.\nIt is prohibited that there is a inPath with first_node X, with second_node Y different from Y1, whenever there is a inPath with first_node X, with second_node Y1.",
+            "Category": "Negative Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00157",
+            "ASP": ":- inpath(X,Y), inpath(X1,Y), X != X1.",
+            "NL_V2": " A vtx is identified by a id. \nA considered is identified by a vtx. \nA inpath is identified by a first node, by a second node.A node cannot have two distinct incoming edges in the path.",
+            "CNL_V2": "A vtx is identified by a id.\nA considered is identified by a vtx.\nA inpath is identified by a first node, by a second node.It is prohibited that there is a inpath with first_node X different from X1, with second_node Y, whenever there is a inpath with first_node X1, with second_node Y.",
+            "Category": "Negative Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00158",
+            "ASP": ":- inpath(X,Y), inpath(X1,Y), X != X1.",
+            "NL_V2": " A vtx is identified by a id. \nA considered is identified by a vtx. \nA inpath is identified by a first node, by a second node.No vertex may have two different incoming edges that are in the path.",
+            "CNL_V2": "A vtx is identified by a id.\nA considered is identified by a vtx.\nA inpath is identified by a first node, by a second node.It is prohibited that there is a inpath with first_node X different from X1, with second_node Y, whenever there is a inpath with first_node X1, with second_node Y.",
+            "Category": "Negative Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00159",
+            "ASP": ":- inpath(X,Y), start(Y).",
+            "NL_V2": " A inpath is identified by a vertex, by a vertex. \nA start is identified by a vertex.The node defined as the start cannot have an incoming edge in the path.",
+            "CNL_V2": "A inpath is identified by a vertex, by a vertex.\nA start is identified by a vertex.\n It is prohibited that there is a inPath with vertex X, with vertex Y, whenever there is a start with vertex Y.",
+            "Category": "Negative Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00160",
+            "ASP": ":- inpath(X,Y), start(Y).",
+            "NL_V2": " A inpath is identified by a vertex, by a vertex.  A start is identified by a vertex.The node defined as the start cannot have an inpath edge pointing to it.",
+            "CNL_V2": "A inpath is identified by a vertex, by a vertex. A start is identified by a vertex. It is prohibited that there is a inPath with vertex X, with vertex Y, whenever there is a start with vertex Y.",
+            "Category": "Negative Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00161",
+            "ASP": ":- levelvtx(1,U), levelvtx(1,V), not uedge(U,V), U < V.",
+            "NL_V2": " A levelvtx is identified by a layer, by a vtx.  A uedge is identified by a node, by a node.Vertices that are on level 1 are required to be connected by an undirected edge.",
+            "CNL_V2": "A levelvtx is identified by a layer, by a vtx. A uedge is identified by a node, by a node. It is prohibited that there is a levelvtx with layer equal to 1, with vtx U less than V, whenever there is a levelvtx with layer equal to 1, with vtx V, whenever there is not a uedge with node U, with node V.",
+            "Category": "Negative Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00163",
+            "ASP": ":- levelvtx(L,V), parentedge(P,V), not levelvtx(L-1,P).",
+            "NL_V2": " A levelvtx is identified by a layer, by a vtx.  A parentedge is identified by a parent, by a child.For each vertex, its parent edge must be at the level immediately preceding the vertex\u2019s level.",
+            "CNL_V2": "A levelvtx is identified by a layer, by a vtx. A parentedge is identified by a parent, by a child. It is prohibited that there is a levelvtx with layer L, with vtx V, whenever there is a parentedge with parent P, with child V, whenever there is not a levelvtx with layer L-1, with vtx P.",
+            "Category": "Negative Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00162",
+            "ASP": ":- levelvtx(L,V), parentedge(P,V), not levelvtx(L-1,P).",
+            "NL_V2": " A vtx is identified by a id. \nA levels is identified by a id. \nA levelvtx is identified by a lvl, and by a vtx. \nA parentedge is identified by a parent, and by a child.The parent of a vertex must belong to the level one less than the vertex's level.",
+            "CNL_V2": "A vtx is identified by a id.\nA levels is identified by a id.\nA levelvtx is identified by a lvl, and by a vtx.\nA parentedge is identified by a parent, and by a child.\nIt is prohibited that there is a levelvtx with lvl L, with vtx V, whenever there is a parentedge with parent P, with child V, whenever there is not a levelvtx with lvl L-1, with vtx P.",
+            "Category": "Negative Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00164",
+            "ASP": ":- link_to(U,V), node(U), assigned(U,C), node(V), assigned(V,C), color(C), U < V.",
+            "NL_V2": " A node is identified by a id. \nA color is identified by a id. \nA assigned is identified by a node, by a color.It is not allowed that nodes with a link between them are assigned the same color having that the first is smaller than the second.",
+            "CNL_V2": "A node is identified by a id.\nA color is identified by a id.\nA assigned is identified by a node, by a color.\nIt is prohibited that when node U is link to node V then node U is assigned color C and also node V is assigned color C, where U is less than V.",
+            "Category": "Negative Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00165",
+            "ASP": ":- no_reached(V).",
+            "NL_V2": " A no_reached is identified by a node.There can't be vertices marked as non reached. ",
+            "CNL_V2": "A no_reached is identified by a node. It is prohibited that there is a no_reached with node V.",
+            "Category": "Negative Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00166",
+            "ASP": ":- not reached(U), dom(U).",
+            "NL_V2": " A vtx is identified by a id. \nA dom is identified by a id. \nA reached is identified by a id.Vertices that are not reached cannot be dom.",
+            "CNL_V2": "A vtx is identified by a id.\nA dom is identified by a id.\nA reached is identified by a id.\nIt is prohibited that there is not a reached with id U, whenever there is a dom with id U.",
+            "Category": "Negative Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00167",
+            "ASP": ":- partition(N,X), partition(N,Y), not edge(X,Y), X < Y.",
+            "NL_V2": " A node is identified by a value.  A partition is identified by a id, by a node.  An edge is identified by a node, by a node.It is not allowed to have two nodes in the same partition if there is not an edge among them.",
+            "CNL_V2": "A node is identified by a value. A partition is identified by a id, by a node. An edge is identified by a node, by a node. It is prohibited that there is a partition with id N, with node X less than Y, whenever there is a partition with id N, with node Y, whenever there is not a edge with node X, with node Y.",
+            "Category": "Negative Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00168",
+            "ASP": ":- partition(U,K), not reach(K,U).",
+            "NL_V2": " A partition is identified by a node, by a node.  A reach is identified by a node, by a node.Vertices cannot belong to a partition if they are not reached in that partition.",
+            "CNL_V2": "A partition is identified by a node, by a node. A reach is identified by a node, by a node. It is prohibited that there is a partition with node U, with node K, whenever there is not a reach with node K, with node U.",
+            "Category": "Negative Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00169",
+            "ASP": ":- vtx(U), not considered(U).",
+            "NL_V2": " A vtx is identified by a id. \nA considered is identified by a vtx.It is impossible to have vertices that are not considered.",
+            "CNL_V2": "A vtx is identified by a id.\nA considered is identified by a vtx.\nIt is prohibited that there is a vtx U, whenever there is not a considered with vtx U.",
+            "Category": "Negative Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00170",
+            "ASP": ":- vtx(U), not considered(U).",
+            "NL_V2": " A vtx is identified by a id. \nA considered is identified by a vtx.It is not allowed to have any vertices that are not considered.",
+            "CNL_V2": "A vtx is identified by a id.\nA considered is identified by a vtx.\nIt is prohibited that there is a vtx U, whenever there is not a considered with vtx U.",
+            "Category": "Negative Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00171",
+            "ASP": ":- vtx(U), not considered(U).",
+            "NL_V2": " A vtx is identified by a id. \nA considered is identified by a vtx.We cannot have vertices that are not considered.",
+            "CNL_V2": "A vtx is identified by a id.\nA considered is identified by a vtx.\nIt is prohibited that there is a vtx U, whenever there is not a considered with vtx U.",
+            "Category": "Negative Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00172",
+            "ASP": ":- vtx(X), not start(X), not reached(X).",
+            "NL_V2": " A vtx is identified by a id. \nA start is identified by a value. \nA reached is identified by a value.It is not allowed that the vertices that are not the starting one are not reached.",
+            "CNL_V2": "A vtx is identified by a id.\nA start is identified by a value.\nA reached is identified by a value.\nIt is required that when a vtx X is not start with value X then it is reached with value X.",
+            "Category": "Negative Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00173",
+            "ASP": ":- #count{NM,K1: depot(NM,K1)} = N, number_depots(N).",
+            "NL_V2": " A number_depots is identified by a value.  A depot is identified by a name, by a km.the total of depots must be equal to the number of depots.",
+            "CNL_V2": "A number_depots is identified by a value. A depot is identified by a name, by a km. It is required that the number of name, for each km, that have a depot with km K1 is different from N whenever  there is a number_depots with value N.",
+            "Category": "Positive Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00174",
+            "ASP": ":- #count{U: dom(U), vtx(U)} > K1, bound(K1).",
+            "NL_V2": " A vtx is identified by a id. \nA bound is identified by a id.The number of vertices selected as dom must be less or equal than a provided bound.",
+            "CNL_V2": "A vtx is identified by a id.\nA bound is identified by a id.\n It is required that the number of vtxs that are a dom with id U is less than or equal to K1, such that there is a vtx U, whenever there is a bound with id K1.",
+            "Category": "Positive Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00175",
+            "ASP": ":- #count{U: parentedge(P,U), vtx(U)} > B, bound(B), vtx(P).",
+            "NL_V2": " A vtx is identified by a id. \nA levels is identified by a id.  \nA levelvtx is identified by a lvl, and by a vtx. \nA parentedge is identified by a parent, and by a child. \nA bound is identified by a value.For each vertex P, the number of parent edges in which it is the parent must not exceed the bound B.",
+            "CNL_V2": "A vtx is identified by a id.\nA levels is identified by a id. \nA levelvtx is identified by a lvl, and by a vtx.\nA parentedge is identified by a parent, and by a child.\nA bound is identified by a value.\nIt is required that the number of child U of parentedge with parent P, with child U is less than or equal to B, such that there is a vtx U, whenever there is a bound with value B, whenever there is a vtx P.",
+            "Category": "Positive Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00176",
+            "ASP": ":- #max{VL: out_degree(Y,VL)} = T, selected(X), out_degree(X,T).",
+            "NL_V2": " A selected is identified by a node.  A out_degree is identified by a node, by a value.The node with highest out degree must not be selected.",
+            "CNL_V2": "A selected is identified by a node. A out_degree is identified by a node, by a value. It is required that the highest value of a out_degree with node Y is different from T whenever  there is a selected with node X, whenever there is a out_degree with node X, with value T.",
+            "Category": "Positive Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00177",
+            "ASP": ":- #sum{W: edgewt(X,Y,W), hc(X,Y)} > M, maxweight(M).",
+            "NL_V2": " A edgewt is identified by a first vtx, by a second vtx, by a weight. \nA hc is identified by a first vtx, by a second vtx. \nA maxweight is identified by a value.The sum of the weights of all edges that are hc must not exceed the maximum weight defined by the maxweight predicate.",
+            "CNL_V2": "A edgewt is identified by a first vtx, by a second vtx, by a weight.\nA hc is identified by a first vtx, by a second vtx.\nA maxweight is identified by a value.\nIt is prohibited that the total weight W that have a edgewt with first_vtx X, with second_vtx Y is greater than M, such that there is a hc with first vtx X, with second vtx Y whenever  there is a maxweight with value M.",
+            "Category": "Positive Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00178",
+            "ASP": ":- cardinality_d(KD), KD > K, bound(K).",
+            "NL_V2": " A cardinality_d is identified by a value.  A bound is identified by a value.The set cardinality cannot be greater than the max value.",
+            "CNL_V2": "A cardinality_d is identified by a value. A bound is identified by a value. It is required that KD is less than or equal to K whenever there is a bound with value K whenever there is a cardinality_d with value KD.",
+            "Category": "Positive Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00179",
+            "ASP": ":- clique(X), clique(Y), not uedge(X,Y), X < Y.",
+            "NL_V2": " A clique is identified by a node.  An uedge is identified by a node, by a node.It is not allowed to have two nodes in the clique unless there is an uedge relation from the smaller to the larger node.",
+            "CNL_V2": "A clique is identified by a node. An uedge is identified by a node, by a node. It is prohibited that there is a clique with node X less than Y, whenever there is a clique with node Y, whenever there is not a uedge with node X, with node Y.",
+            "Category": "Positive Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00180",
+            "ASP": ":- clique(X), clique(Y), not uedge(X,Y), X < Y.",
+            "NL_V2": " A clique is identified by a node.  An uedge is identified by a node, by a node.Two nodes cannot be part of a clique if there is not a uedge relation between them where the first is smaller than the second.",
+            "CNL_V2": "A clique is identified by a node. An uedge is identified by a node, by a node. It is prohibited that there is a clique with node X less than Y, whenever there is a clique with node Y, whenever there is not a uedge with node X, with node Y.",
+            "Category": "Positive Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00181",
+            "ASP": ":- node(RCHD_D), not reached(RCHD_D).",
+            "NL_V2": " An node is identified by a id. \nAn reached is identified by a node.All nodes have to be reached.",
+            "CNL_V2": "An node is identified by a id.\nAn reached is identified by a node.\nIt is required that a node is reached.",
+            "Category": "Positive Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00182",
+            "ASP": ":- not cond(V), vtx(V).",
+            "NL_V2": " A vtx is identified by a value.  A cond is identified by a vtx.Vertices are required to be condition.",
+            "CNL_V2": "A vtx is identified by a value. A cond is identified by a vtx. It is required that there is a cond with vtx value V, whenever there is a vtx with value V.",
+            "Category": "Positive Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00183",
+            "ASP": ":- not controlled(Y), tobecontrolled(Y).",
+            "NL_V2": " A controlled is identified by a value.  A toBeControlled is identified by a value.A company marked to be checked is required to be controlled.",
+            "CNL_V2": "A controlled is identified by a value. A toBeControlled is identified by a value. It is required that there is a controlled with value Y, whenever there is a toBeControlled with value Y.",
+            "Category": "Positive Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00184",
+            "ASP": ":- not reach(Y), path(X,Y).",
+            "NL_V2": " A path is identified by a starting node, by an ending node.  A reach is identified by a node.The ending node of a path edge must be reached.",
+            "CNL_V2": "A path is identified by a starting node, by an ending node. A reach is identified by a node. It is required that there is a reach with node Y, whenever there is a path with starting_node X, with ending_node Y.",
+            "Category": "Positive Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00185",
+            "ASP": ":- not reached(U), vtx(U), dom(U).",
+            "NL_V2": " A vtx is identified by a id.The dom vertices must be reached.",
+            "CNL_V2": "A vtx is identified by a id.\n It is required that when Vtx U is not reached then Vtx U is not dom.",
+            "Category": "Positive Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00186",
+            "ASP": ":- not uedge(U,V), levelvtx(1,U), levelvtx(1,V), U < V.",
+            "NL_V2": " A levelvtx is identified by a lvl, and by a vtx. \nA uedge is identified by a vtx1, and by a vtx2.Vertices that are on the level 1 are required to be connected by an undirected edge.",
+            "CNL_V2": "A levelvtx is identified by a lvl, and by a vtx.\nA uedge is identified by a vtx1, and by a vtx2.\nIt is required that there is a uedge with vtx1 U  less than V, with vtx2 V, whenever there is a levelvtx with lvl equal to 1, with vtx U, whenever there is a levelvtx with lvl equal to 1, with vtx V.",
+            "Category": "Positive Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00187",
+            "ASP": ":- not uedge(U,V), parentedge(P,U), parentedge(P,V), U < V.",
+            "NL_V2": " A parentedge is identified by a parent node, by a child node. \nA uedge is identified by a first node, by a second node.It is required that any two different children of the same parent, as specified by parentedge, must be connected by an undirected edge.",
+            "CNL_V2": "A parentedge is identified by a parent node, by a child node.\nA uedge is identified by a first node, by a second node.\nIt is required that there is a uedge with first node U less than V, with second node V, whenever there is a parentedge with parent node P, with child node U, whenever there is a parentedge with parent node P, with child node V.",
+            "Category": "Positive Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00188",
+            "ASP": ":- selected(X,Y), selected(Y,X).",
+            "NL_V2": " A selected is identified by a node, by a node.The same edge cannot be selected in both directions.",
+            "CNL_V2": "A selected is identified by a node, by a node. It is required that there is not a selected with node X, with node Y, whenever there is a selected with node Y, with node X.",
+            "Category": "Positive Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00189",
+            "ASP": ":- vtx(CNSDRD_D), not considered(CNSDRD_D).",
+            "NL_V2": " A vtx is identified by a id.All vertices must be considered.",
+            "CNL_V2": "A vtx is identified by a id.\nIt is required that a vtx is considered.",
+            "Category": "Positive Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00190",
+            "ASP": ":- vtx(RCHD_VL), not reached(RCHD_VL).",
+            "NL_V2": " A vtx is identified by a value.All vertices have to be reached.",
+            "CNL_V2": "A vtx is identified by a value.\nIt is required that vtx is reached.",
+            "Category": "Positive Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00191",
+            "ASP": ":- vtx(U), not reached(U), not start(U).",
+            "NL_V2": " A vtx is identified by a id. \nA reached is identified by a vtx. \nA start is identified by a vtx.Existing vertex must be reached, except the starting one.",
+            "CNL_V2": "A vtx is identified by a id.\nA reached is identified by a vtx.\nA start is identified by a vtx.\nIt is required that a vtx U is a reached, whenever there is not a start with vtx U.",
+            "Category": "Positive Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00192",
+            "ASP": ":- vtx(V), not cond(V).",
+            "NL_V2": " A vtx is identified by a value.  A cond is identified by a vtx.All vertices are required to be cond.",
+            "CNL_V2": "A vtx is identified by a value. A cond is identified by a vtx. It is required that there is a cond with vtx value V whenever there is a vtx with value V.",
+            "Category": "Positive Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00193",
+            "ASP": ":- vtx(V), not considered(V).",
+            "NL_V2": " A vtx is identified by an id.All vertices are required to be modeled as considered.",
+            "CNL_V2": "A vtx is identified by an id. It is required that a vtx V is considered.",
+            "Category": "Positive Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00194",
+            "ASP": ":- vtx(X), not reached(X).",
+            "NL_V2": " A vtx is identified by a value.Every vertex needs to be reached.",
+            "CNL_V2": "A vtx is identified by a value. It is required that vtx X is reached.",
+            "Category": "Positive Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00196",
+            "ASP": ":- vtx(X), not reached(X).",
+            "NL_V2": " A vtx is identified by a id.Vertices in the graph must be reached.",
+            "CNL_V2": "A vtx is identified by a id.\nIt is required that Vtx X is reached.",
+            "Category": "Positive Strong Constraint"
+        },
+        {
+            "ID": "EVAL_00197",
+            "ASP": "1 <= {chosencolour(ND_VL,CLR_NM): colour(CLR_NM)} <= 1 :- node(ND_VL).",
+            "NL_V2": " A colour is identified by a name.  A node is identified by a value.Each node can only be assigned one color.",
+            "CNL_V2": "A colour is identified by a name. A node is identified by a value. Every node can be chosenColour exactly 1 colour.",
+            "Category": "Quantified Choice Rules"
+        },
+        {
+            "ID": "EVAL_00198",
+            "ASP": "1 <= {depot(R,K) ; notdepot(R,K)} <= 1 :- restaurant(R,K).",
+            "NL_V2": " A restaurant is identified by a name, by a km.  A depot is identified by a name, by a km.  A notdepot is identified by a name, by a km.Each restaurant may be a depot or no_depot.",
+            "CNL_V2": "A restaurant is identified by a name, by a km. A depot is identified by a name, by a km. A notdepot is identified by a name, by a km. Whenever there is a restaurant with name R, with km K then we can have exactly 1 depot with name R, with km K or notdepot with name R, with km K.",
+            "Category": "Quantified Choice Rules"
+        },
+        {
+            "ID": "EVAL_00199",
+            "ASP": "1 <= {included(X) ; included(Y)} <= 1 :- exclusive_pair(X,Y).",
+            "NL_V2": " An exclusive_pair is identified by a node, by a node.  An included is identified by a node.In each exclusive pair, exactly one of the two nodes has to be chosen.",
+            "CNL_V2": "An exclusive_pair is identified by a node, by a node. An included is identified by a node. Whenever there is a exclusive_pair with node X, with node Y then we can have exactly 1 included with node X or included with node Y.",
+            "Category": "Quantified Choice Rules"
+        },
+        {
+            "ID": "EVAL_00202",
+            "ASP": "1 <= {inside(V) ; outside(V)} <= 1 :- vertex(V).",
+            "NL_V2": " A vertex is identified by an id.Define each vertex as inside or outside.",
+            "CNL_V2": "A vertex is identified by an id. Whenever there is a vertex with id V then we can have exactly 1 inside with vertex id V or outside with vertex id V.",
+            "Category": "Quantified Choice Rules"
+        },
+        {
+            "ID": "EVAL_00201",
+            "ASP": "1 <= {inside(V) ; outside(V)} <= 1 :- vertex(V).",
+            "NL_V2": " A vertex is identified by an id.Each vertex is either inside or outside.",
+            "CNL_V2": "A vertex is identified by an id. Whenever there is a vertex with id V then we can have exactly 1 inside with vertex id V or outside with vertex id V.",
+            "Category": "Quantified Choice Rules"
+        },
+        {
+            "ID": "EVAL_00200",
+            "ASP": "1 <= {inside(V) ; outside(V)} <= 1 :- vertex(V).",
+            "NL_V2": " A vertex is identified by an id.For each vertex, choose whether it is inside or outside.",
+            "CNL_V2": "A vertex is identified by an id. Whenever there is a vertex with id V then we can have exactly 1 inside with vertex id V or outside with vertex id V.",
+            "Category": "Quantified Choice Rules"
+        },
+        {
+            "ID": "EVAL_00203",
+            "ASP": "1 <= {levelvtx(L,U): levels(L)} <= 1 :- vtx(U).",
+            "NL_V2": " A vtx is identified by a id. \nA levels is identified by a id. \nA levelvtx is identified by a lvl, and by a vtx.Every vertex is assigned exactly one level via the levelvtx relation between a level and a vertex.",
+            "CNL_V2": "A vtx is identified by a id.\nA levels is identified by a id.\nA levelvtx is identified by a lvl, and by a vtx.\nWhenever there is a vtx U then we can have levelvtx with lvl L, and with vtx U exactly 1 levels L.",
+            "Category": "Quantified Choice Rules"
+        },
+        {
+            "ID": "EVAL_00204",
+            "ASP": "1 <= {parentedge(P,U): uedge(P,U) ; parentedge(P,U): uedge(U,P)} <= 1 :- levelvtx(L,U), L > 1.",
+            "NL_V2": " A levelvtx is identified by a layer, by a vtx.  A parentedge is identified by a parent, by a child.  An uedge is identified by a node, by a node.For every vertex with level L > 1 in the levelvtx relation, select exactly one parent edge from a vertex connected by a uedge, regardless of the edge's direction.",
+            "CNL_V2": "A levelvtx is identified by a layer, by a vtx. A parentedge is identified by a parent, by a child. An uedge is identified by a node, by a node.  Whenever there is a levelvtx with layer L greater than 1, with vtx U, then we can have exactly 1 parentedge with parent P, with child U such that there is a uedge with node P, with node U, or a parentedge with parent P, with child U such that there is an uedge with node U, with node P.",
+            "Category": "Quantified Choice Rules"
+        },
+        {
+            "ID": "EVAL_00205",
+            "ASP": "1 <= {partition(P,N): parts(P)} <= 1 :- node(N).",
+            "NL_V2": "  A node is identified by a value.  A partition is identified by a id, by a node.  A parts is identified by a id.Associate a node to exactly one of the defined parts.",
+            "CNL_V2": " A node is identified by a value. A partition is identified by a id, by a node. A parts is identified by a id. Whenever there is a node with value N then we can have exactly 1 partition with id P, with node N such that there is a parts with id P.",
+            "Category": "Quantified Choice Rules"
+        },
+        {
+            "ID": "EVAL_00074",
+            "ASP": "1 <= {partition(U,K): parts(K)} <= 1 :- vtx(U).",
+            "NL_V2": " A partition is identified by a value, by a node.  A vtx is identified by a value.  A parts is identified by a value.Each vertex can be associated exactly 1 of the defined parts, using the partition predicate.",
+            "CNL_V2": "A partition is identified by a value, by a node. A vtx is identified by a value. A parts is identified by a value. Whenever there is a vtx U, then we can have exactly 1 partition with value U, and with node K such that there is a part K.",
+            "Category": "Quantified Choice Rules"
+        },
+        {
+            "ID": "EVAL_00075",
+            "ASP": "1 <= {partition(U,K): vtx(U)} <= V :- parts(K), vtxbound(V).",
+            "NL_V2": " A vtx is identified by a id.  A parts is identified by a value.  A vtxbound is identified by a value.  A partition is identified by a value, by a id.For each part assign one or several vertices up to the maximum allowed by vtxbound, using the partition predicate.",
+            "CNL_V2": "A vtx is identified by a id. A parts is identified by a value. A vtxbound is identified by a value. A partition is identified by a value, by a id. Whenever there is a part with value K, whenever there is a vtxbound with value V, then we can have between 1 and V partition with value U, and with id K such that there is a vtx U.",
+            "Category": "Quantified Choice Rules"
+        },
+        {
+            "ID": "EVAL_00206",
+            "ASP": "{clique(ND_D)} :- node(ND_D).",
+            "NL_V2": " A node is identified by a id.All the nodes can be chosen to be part of the clique.",
+            "CNL_V2": "A node is identified by a id.\nEvery node can be a clique.",
+            "Category": "Quantified Choice Rules"
+        },
+        {
+            "ID": "EVAL_00207",
+            "ASP": "{dom(VTX_D)} :- vtx(VTX_D).",
+            "NL_V2": " A vtx is identified by a id.The vertices of the graph can be chosen as part of the dom set.",
+            "CNL_V2": "A vtx is identified by a id. Every vtx can be a dom.",
+            "Category": "Quantified Choice Rules"
+        },
+        {
+            "ID": "EVAL_00140",
+            "ASP": "{inpath(X,Y) ; outpath(X,Y)} :- edge(X,Y,_).",
+            "NL_V2": " A edge is identified by a vertex, by a vertex, by a weight. \nA inpath is identified by a vertex, by a vertex. \nA outpath is identified by a vertex, by a vertex.For any weighted edge connecting two nodes, it is either in the path or out of the path.",
+            "CNL_V2": "A edge is identified by a vertex, by a vertex, by a weight.\nA inpath is identified by a vertex, by a vertex.\nA outpath is identified by a vertex, by a vertex.\nWhenever there is a edge with vertex X, with vertex Y then we can have a inPath with vertex X, with vertex Y or a outPath with vertex X, with vertex Y.",
+            "Category": "Quantified Choice Rules"
+        },
+        {
+            "ID": "EVAL_00208",
+            "ASP": "2 <= {select(I,C): domain(I-1,C)} <= 2 :- rounds(I).",
+            "NL_V2": " A select is identified by an id, by a value.  A domain is identified by an id, by a value.  A rounds is identified by an id.Given the round I, select exactly two columns in the sequence for the current round from the columns that belongs to the domain of the previous round.",
+            "CNL_V2": "A select is identified by an id, by a value. A domain is identified by an id, by a value. A rounds is identified by an id. Whenever there is a rounds with id I then we can have exactly 2 select with id I, with value C such that there is a domain with id I-1, with value C.",
+            "Category": "Quantified Choice Rules"
+        },
+        {
+            "ID": "EVAL_00209",
+            "ASP": ":~ #count{ND: clique(ND)} = CNT. [-CNT@3]",
+            "NL_V2": " A clique is identified by a node.The main priority is to have as many nodes in the clique as possible.",
+            "CNL_V2": "A clique is identified by a node.\nIt is preferred with high priority that the number of nodes that are clique is maximized.",
+            "Category": "Weak Constraint"
+        },
+        {
+            "ID": "EVAL_00210",
+            "ASP": ":~ #count{VRTX: inside(VRTX)} = CNT. [CNT@1]",
+            "NL_V2": " An inside is identified by a vertex.We should minimize the number of vertices that are inside the set.",
+            "CNL_V2": "An inside is identified by a vertex. It is preferred, with priority 1, that the number of vertex that have a inside is minimized.",
+            "Category": "Weak Constraint"
+        },
+        {
+            "ID": "EVAL_00211",
+            "ASP": ":~ attack(X,Y). [-1@1]",
+            "NL_V2": " An attack is identified by an cordx, by an cordy.The number of attacked cells must be maximized.",
+            "CNL_V2": "An attack is identified by an cordx, by an cordy. It is preferred, with priority 1, that there is a attack with cordx X, with cordy Y is maximized.",
+            "Category": "Weak Constraint"
+        },
+        {
+            "ID": "EVAL_00212",
+            "ASP": ":~ buypacket(P,C). [C@1,P,C]",
+            "NL_V2": " A buyPacket is identified by a packet, and by a cost.Minimize the total cost of the bought packets.",
+            "CNL_V2": "A buyPacket is identified by a packet, and by a cost. It is preferred, with priority 1, that whenever there is a buyPacket with packet P, with cost C, C is minimized.",
+            "Category": "Weak Constraint"
+        },
+        {
+            "ID": "EVAL_00213",
+            "ASP": ":~ buypacket(P,C). [C@1,P,C]",
+            "NL_V2": " A buyPacket is identified by a packet, and by a cost.The total cost of bought packets should be the lowest.",
+            "CNL_V2": "A buyPacket is identified by a packet, and by a cost. It is preferred, with priority 1, that whenever there is a buyPacket with packet P, with cost C, C is minimized.",
+            "Category": "Weak Constraint"
+        },
+        {
+            "ID": "EVAL_00214",
+            "ASP": ":~ cardinality_d(KD). [KD@1]",
+            "NL_V2": " A cardinality_d is identified by a value.Minize the cadinality.",
+            "CNL_V2": "A cardinality_d is identified by a value. It is preferred, with priority 1, that whenever there is a cardinality_d with value KD, KD is minimized.",
+            "Category": "Weak Constraint"
+        },
+        {
+            "ID": "EVAL_00215",
+            "ASP": ":~ inpath(X,Y), edge(X,Y,C). [C@1,X,Y,C]",
+            "NL_V2": " An inPath is identified by a first vtx, by a second vtx. \nAn edge is identified by a first vtx, by a second vtx, by a weight.Minimize the overall weight of all edges considered in the path.",
+            "CNL_V2": "An inPath is identified by a first vtx, by a second vtx.\nAn edge is identified by a first vtx, by a second vtx, by a weight.\nIt is preferred, with low priority, that whenever there is an inPath with first vtx X, with second vtx Y, whenever there is an edge with first vtx X, with second vtx Y, with weight C, C is minimized.",
+            "Category": "Weak Constraint"
+        },
+        {
+            "ID": "EVAL_00217",
+            "ASP": ":~ inpath(X,Y), edge(X,Y,C). [C@1,X,Y,C]",
+            "NL_V2": " An inPath is identified by a first vtx, by a second vtx. \nAn edge is identified by a first vtx, by a second vtx, by a weight.The goal is to minimize the total weight of all edges included in the path.",
+            "CNL_V2": "An inPath is identified by a first vtx, by a second vtx.\nAn edge is identified by a first vtx, by a second vtx, by a weight.\nIt is preferred, with low priority, that whenever there is an inPath with first vtx X, with second vtx Y, whenever there is an edge with first vtx X, with second vtx Y, with weight C, C is minimized.",
+            "Category": "Weak Constraint"
+        },
+        {
+            "ID": "EVAL_00216",
+            "ASP": ":~ inpath(X,Y), edge(X,Y,C). [C@1,X,Y,C]",
+            "NL_V2": " An inPath is identified by a first vtx, by a second vtx. \nAn edge is identified by a first vtx, by a second vtx, by a weight.The total weight of all edges in the path should be minimized.",
+            "CNL_V2": "An inPath is identified by a first vtx, by a second vtx.\nAn edge is identified by a first vtx, by a second vtx, by a weight.\nIt is preferred, with low priority, that whenever there is an inPath with first vtx X, with second vtx Y, whenever there is an edge with first vtx X, with second vtx Y, with weight C, C is minimized.",
+            "Category": "Weak Constraint"
+        },
+        {
+            "ID": "EVAL_00218",
+            "ASP": ":~ serves(R,Dist). [Dist@1]",
+            "NL_V2": " A serves is identified by a name, by a distance.Minimize the sum of distances of serves restaurants.",
+            "CNL_V2": "A serves is identified by a name, by a distance. It is preferred, with priority 1, that whenever there is a serves with name R, with distance Dist, Dist is minimized.",
+            "Category": "Weak Constraint"
+        },
+        {
+            "ID": "EVAL_00219",
+            "ASP": ":~ serves(R,Dist). [Dist@1]",
+            "NL_V2": " A serves is identified by a name, by a distance.Minimize the total distances of the restaurants that are supply.",
+            "CNL_V2": "A serves is identified by a name, by a distance. It is preferred, with priority 1, that whenever there is a serves with name R, with distance Dist, Dist is minimized.",
+            "Category": "Weak Constraint"
+        },
+        {
+            "ID": "EVAL_00220",
+            "ASP": ":~ wall(X,Y). [1@2]",
+            "NL_V2": " A wall is identified by an cordx, by an cordy.We should minimize, with medium priority, the number of wall cells that are placed.",
+            "CNL_V2": "A wall is identified by an cordx, by an cordy. It is preferred as little as possible, with priority 2, that there is a wall with cordx X, with cordy Y.",
+            "Category": "Weak Constraint"
+        }
+    ]
+}
