@@ -1,2 +1,2 @@
 # NL2ASPv2
-Repository of NL2ASP complete code and dataset files.
+NL2ASPv2 tool with complete code and dataset files for the LPNMR26 paper.
